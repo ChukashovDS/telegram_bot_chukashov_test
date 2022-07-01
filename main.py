@@ -928,6 +928,7 @@ async def REG_RAB_RASP(message: types.Message):
          html = BS(r.content,'html.parser')
          pars_kurs = html.find_all("div", class_="col-md-2 col-xs-9 _right mono-num")
          pars_data = html.find_all("div", class_="col-md-2 col-xs-7 _right")
+         print(pars_data)
 
          data = pars_data[1].text
          dollar = pars_kurs[1].text
@@ -2341,6 +2342,8 @@ async def chack_date():
         d = datetime.today()
         d1 = d.strftime("%Y-%m-%d")
         t1 = d.strftime("%H:%M")
+        print(d1)
+        print(t1)
 
         napominanie_read = await sql_napominanie_read()
         if napominanie_read is None:
