@@ -928,6 +928,7 @@ async def REG_RAB_RASP(message: types.Message):
          html = BS(r.content,'html.parser')
          pars_kurs = html.find_all("div", class_="col-md-2 col-xs-9 _right mono-num")
          pars_data = html.find_all("div", class_="col-md-2 col-xs-7 _right")
+        print(html)
          print(pars_data)
 
          data = pars_data[1].text
