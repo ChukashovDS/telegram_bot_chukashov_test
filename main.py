@@ -2368,7 +2368,7 @@ async def chack_date():
                 da1 = datetime(2023, 6, 8, tmd1, tmd2)
                 tm = da1.strftime("%H:%M")
                 if r[1] <= d1 and tm <= t1:
-                    await bot.send_message(chat_id, f'Напоминание: {d1} {t1}\n '
+                    await bot.send_message(chat_id, f'Напоминание: {d1} {r[2]}\n '
                                                     f'{r[3]}')
                     uid = r[0]
                     data = r[1]
