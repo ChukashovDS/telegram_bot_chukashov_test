@@ -939,6 +939,7 @@ async def REG_RAB_RASP(message: types.Message):
 
          pars_dollar_rbk = html_dollar_rbk.find_all("span", {"class": "chart__info__sum"})
          pars_dollar_rbk = pars_dollar_rbk[0].text
+         print(html_dollar_rbk)
 
 
          url_euro_rbk = 'https://quote.rbc.ru/ticker/59090'
