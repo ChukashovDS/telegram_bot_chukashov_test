@@ -948,7 +948,7 @@ async def REG_RAB_RASP(message: types.Message):
 
          pars_euro_rbk = html_euro_rbk.find_all("span", {"class": "chart__info__sum"})
          pars_euro_rbk = pars_euro_rbk[0].text
-
+         print(html_euro_rbk)
 
 
          url_neft_brent_rbk = 'https://quote.rbc.ru/ticker/181206'
@@ -957,6 +957,7 @@ async def REG_RAB_RASP(message: types.Message):
 
          pars_neft_brent_rbk = html_neft_brent_rbk.find_all("span", {"class": "chart__info__sum"})
          pars_neft_brent_rbk = pars_neft_brent_rbk[0].text
+         print(html_neft_brent_rbk)
 
 
 
@@ -967,6 +968,7 @@ async def REG_RAB_RASP(message: types.Message):
          pars_btk_rbk = html_btk_rbk.find_all("span", {"class": "currencies__td__inner"})
          pars_btk_rbk_1 = pars_btk_rbk[0].text
          pars_btk_rbk_2 = pars_btk_rbk[1].text
+         print(html_btk_rbk)
 
 
          url_time = 'https://time100.ru/'
@@ -977,6 +979,7 @@ async def REG_RAB_RASP(message: types.Message):
          pars_time_vrem = pars_time[0].text
          pars_time_data = pars_time[1].text
          pars_time_data = pars_time_data.replace('сегодня:','')
+         print(html_time)
 
 
 
